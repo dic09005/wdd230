@@ -1,9 +1,11 @@
-
+.page {
+  background-color: aliceblue;
+}
 header {
   align-items: center;
   display: flex;
   width: 75%;
-  background-color: darkgrey;
+  background-color: rgb(169 169 169 / 50%);
   border-radius: 10px;
   padding: .5em;
 }
@@ -13,7 +15,7 @@ footer {
   justify-content: center;
   display: flex;
   width: 75%;
-  background-color: darkgrey;
+  background-color: rgb(169 169 169 / 50%);
   border-radius: 10px;
   padding: .5em;
   font-family: 'Oswald', sans-serif;
@@ -23,7 +25,7 @@ header img {
   max-width: 160px;
   margin: .5em;
   border-radius: 10px;
-  box-shadow: -15px 7px 30px rgb(0, 0, 0);
+  box-shadow: -15px 7px 30px rgb(95, 93, 93);
 }
 
 h1, h2 {
