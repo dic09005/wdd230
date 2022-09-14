@@ -1,0 +1,54 @@
+
+header {
+  align-items: center;
+  display: flex;
+  width: 75%;
+  background-color: darkgrey;
+  border-radius: 10px;
+  padding: .5em;
+}
+
+footer {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 75%;
+  background-color: darkgrey;
+  border-radius: 10px;
+  padding: .5em;
+}
+
+header img {
+  max-width: 160px;
+  margin: .5em;
+  border-radius: 10px;
+  box-shadow: -15px 7px 30px rgb(0, 0, 0);
+}
+
+h1, h2 {
+  padding: 0.6rem;
+  font-family: 'Oswald', sans-serif;
+  text-shadow: 1px 1px 0 #ccc, 1px 1px 0 #ccc, 1px -1px 0 #ccc, -1px -1px 0 #ccc;
+}
+
+body {
+  text-align: left;
+  align-items: left;
+  justify-content: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
