@@ -9,16 +9,15 @@
       content="Week 02 Assignment for Robin Dickson in WDD 230"
     />
     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oswald&family=Shadows+Into+Light&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Noto+Serif:ital@1&display=swap"
       rel="stylesheet"
+    />
     />
   </head>
   <body>
@@ -26,16 +25,52 @@
       <h1>Three Principles of Design</h1>
     </header>
     <main>
-      <h2>Three Principles of Design</h2>
-      <h3>Rule of Thirds</h3>
-      <h3>Rule of Thirds</h3>
-      <h3>Rule of Thirds</h3>
+      <section class="tile">
+        <dev class="content">
+          <h2>Rule of Thirds</h2>
+          <a href="https://unsplash.com/photos/lAx4E6Gl06s">unsplash.com</a>
+          <img src="images/Rule of Thirds.PNG" alt="Rule of Thirds" />
+          <p>
+            I chose this website because the picture displayed shows the rule of
+            thirds in action. The rule of thirds is about composition. Notice
+            how the eye naturally gravitates towards the laptop in the image. If
+            you were to draw tic-tac-toe board on top of that image the laptop
+            would be in the bottom-left corner of the top-right box.
+          </p>
+        </dev>
+      </section>
+      <section class="tile">
+        <dev class="content">
+          <h2>PARC: Contrast</h2>
+          <a href="https://music.youtube.com/">music.youtube.com</a>
+          <img src="images/Contrast.PNG" alt="Picture Youtube Music" />
+          <p>
+            In our lesson we learned that, “Contrast is designing a distinct
+            difference between foreground and background colors in order to
+            enhance readability.” YouTube Music has this mastered by using bold
+            colors against a black background.
+          </p>
+        </dev>
+      </section>
+      <section class="tile">
+        <dev class="content">
+          <h2>Visual Hierarchy</h2>
+          <a href="https://www.amazon.com/Amazon-Video/">amazon.com</a>
+          <img src="images/Visual Hierarchy.PNG" alt="Visual Hierarchy" />
+          <p>
+            Amazon video uses create visual hierarchy to promote their big
+            Blockbuster films and try to elicit a response to specific titles.
+            Most of the videos displayed are based off of the users’
+            preferences. But the biggest displays are promotions.
+          </p>
+        </dev>
+      </section>
     </main>
     <footer>
       <div>
-        © <text id="year"></text> | Robin Dickson | Rigby, ID <br />
+        © <span id="year"></span> | Robin Dickson | Rigby, ID <br />
         Last Updated:
-        <text id="timestamp"></text>
+        <span id="timestamp"></span>
       </div>
       <script src="scripts/date.js"></script>
     </footer>
