@@ -46,7 +46,6 @@ main {
 }
 
 .content {
-  grid-template-rows: 1fr, 1fr, 1fr, 1fr;
   display: grid;
   margin: auto;
   width: 90%;
