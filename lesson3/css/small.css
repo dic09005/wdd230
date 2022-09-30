@@ -1,0 +1,78 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-size: 16px;
+	font-family: "Sansita", Ubuntu, sans-serif;
+}
+
+header,
+footer {
+    color: whitesmoke;
+	background-color: #4d4d4d;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+}
+
+header,
+nav,
+main,
+footer {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+h1 {
+    color: whitesmoke;
+	font-size: 2rem;
+}
+h2 {
+	padding: .5rem;
+	color: #536878;
+}
+
+p {
+	padding: .5rem;
+}
+
+nav {
+	background-color: #919191;
+	text-align: center;
+	box-shadow: 0 0 30px #333;
+	display: flex;
+	flex-direction: row;
+}
+
+main {
+	text-align: center;
+	box-shadow: 0 0 30px #333;
+	display: flex;
+	flex-direction: column;
+    padding: 20px;
+}
+
+nav div {
+	flex: 1 1 auto;
+}
+
+nav a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 15px;
+	text-decoration: none;
+    text-shadow: 1px 1px 0 rgb(59, 59, 59), 1px 1px 0 rgb(59, 59, 59), 1px -1px 0 rgb(59, 59, 59), -1px -1px 0 rgb(59, 59, 59);
+	font-size: 0.9rem;
+}
+
+nav a:hover {
+	background-color: #1900ff;
+	color: yellow;
+}
+
