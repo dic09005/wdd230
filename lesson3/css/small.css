@@ -5,6 +5,7 @@
 	box-sizing: border-box;
 }
 body {
+	margin: .5em;
 	font-size: 16px;
 	font-family: "Sansita", Ubuntu, sans-serif;
 }
@@ -12,12 +13,12 @@ body {
 header,
 footer {
     color: whitesmoke;
-	background-color: #4d4d4d;
+	background-color: #46494C;
 	display: flex;
 	flex-flow: column;
 	align-items: center;
 	justify-content: center;
-	padding: 10px;
+	padding: 2em;
 }
 
 header,
@@ -32,17 +33,13 @@ h1 {
     color: whitesmoke;
 	font-size: 2rem;
 }
-h2 {
-	padding: .5rem;
-	color: #536878;
-}
 
 p {
 	padding: .5rem;
 }
 
 nav {
-	background-color: #919191;
+	background-color: #1985A1;
 	text-align: center;
 	box-shadow: 0 0 30px #333;
 	display: flex;
@@ -50,11 +47,13 @@ nav {
 }
 
 main {
+	background-color: #DCDCDD;
 	text-align: center;
 	box-shadow: 0 0 30px #333;
 	display: flex;
 	flex-direction: column;
     padding: 20px;
+	min-height: 250px;
 }
 
 nav div {
@@ -72,7 +71,10 @@ nav a {
 }
 
 nav a:hover {
-	background-color: #1900ff;
-	color: yellow;
+	background-color: #589bff;
 }
 
+a.current {
+    color: #C5C3C6;
+	text-shadow: 0px;
+}
