@@ -7,7 +7,7 @@
 body {
 	margin: .5em;
 	font-size: 16px;
-	font-family: "Sansita", Ubuntu, sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
 header,
@@ -75,6 +75,6 @@ nav a:hover {
 }
 
 a.current {
-    color: #C5C3C6;
+    color: #E57255;
 	text-shadow: 0px;
 }
