@@ -1,0 +1,144 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	margin: .5em;
+	font-size: 16px;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+header,
+footer {
+    color: whitesmoke;
+	background-color: #46494C;
+	align-items: center;
+	justify-content: center;
+	padding: 1em;
+}
+
+header {
+	display: flex;
+	flex-flow: row;
+}
+
+footer {
+	display: flex;
+	flex-flow: column;
+}
+
+header,
+nav,
+main,
+footer {
+	margin: 0 auto;
+}
+
+h1, p {
+    margin: 0 2vw;
+}
+
+div img {
+	padding: .5em;
+	border-radius: 50%;
+}
+
+nav {
+    background-color: #1985A1;
+}
+
+nav button {
+    margin: .2rem 2vw;
+    background: transparent;
+    border: none;
+    font-size: 2rem;    
+    color: #555;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+nav ul li a {
+    display: block;
+    padding: .4rem;
+    text-decoration: none;
+    color: #333;
+    border-top: 1px solid rgba(0,0,0,0.5);
+}
+
+nav ul li a:hover {
+    background-color: rgba(0,0,0,0.3);
+}
+
+nav ul li.active a {
+    background-color: rgba(0,0,0,0.2);
+    color: #fff;
+}
+
+nav ul {
+    display: none;
+}
+
+nav ul.open {
+    display: block;
+}
+
+#hamburgerBtn span:nth-child(1) {display: block;}
+#hamburgerBtn span:nth-child(2) {display: none;}
+
+#hamburgerBtn.open span:nth-child(1) {display: none;}
+#hamburgerBtn.open span:nth-child(2) {display: block;}
+
+
+
+.spotlights {
+	padding: 5px;
+	grid-row: 5/6;
+}
+
+.events {
+	grid-row: 2/3;
+}
+
+.newrelease {
+	grid-row: 4/5;
+}
+
+main section {
+	border: 1px solid #555;
+	margin: .5em;
+	padding: 1em;
+}
+
+.headings {
+	display: flex;
+	flex-direction: column;
+}
+
+.m {
+	font-size: 0.8rem;
+}
+
+.info {
+	text-align: center;
+	padding: .2em;
+}
+
+.aboutMe {
+	border-top: 1px solid rgba(0,0,0,0.3);
+	padding: 1em;
+}
+
+.join {
+	display: none;
+}
+
+.spotlight3 {
+	display: none;
+}
