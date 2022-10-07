@@ -3,6 +3,20 @@
 		font-size: 2rem;
 	}
 
+    header {
+        display: grid;
+        grid-template-columns: 10% 30% 60%;
+        grid-template-rows: 60% 40%;
+        padding-bottom: 0;
+    }
+
+    nav {
+        grid-row: 2/3;
+        grid-column: 1/4;
+        position: relative;
+        bottom: 0px;
+    }
+
     nav {
         display: flex;
         flex-direction: row;
@@ -23,8 +37,14 @@
 	main {
         display: grid;
         grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+		grid-template-rows: 15vh 15vh 15vh 15vh 15vh;
 	}
+
+    .media {
+        position: absolute;
+        top: 25px;
+        right:25px;
+    }
 
     .hero {
         grid-column: 1/3;
