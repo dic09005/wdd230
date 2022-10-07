@@ -1,7 +1,11 @@
 @media only screen and (min-width: 800px) {
 
 
+    nav button {display: none;}
 
+    nav ul#primaryNav {
+        display: flex;
+    }
 
     h1 {
 		font-size: 3rem;

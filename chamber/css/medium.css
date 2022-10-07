@@ -17,15 +17,15 @@
         bottom: 0px;
     }
 
-    nav {
-        display: flex;
-        flex-direction: row;
     
-    }
-    nav button {display: none;}
+    #hamburgerBtn span:nth-child(1) {display: block;}
+    #hamburgerBtn span:nth-child(2) {display: none;}
+
+    #hamburgerBtn.open span:nth-child(1) {display: none;}
+    #hamburgerBtn.open span:nth-child(2) {display: block;}
 
     nav ul#primaryNav {
-        display: flex;
+        display: none;
         margin-left: 2vw;
     }
 
