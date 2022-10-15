@@ -43,8 +43,6 @@ h1, p {
     margin: 0 2vw;
 }
 
-
-
 .logo {
 	padding: .5em;
 	border-radius: 50%;
@@ -118,7 +116,16 @@ div a {
 	background: url("images/istockphoto7.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	min-height: 200px;
+	min-height: 200px;	
+	position: relative;
+}
+
+.overlay {
+	position: absolute;
+	bottom: 25px;
+	right: 50px;
+	background-color: rgb(107, 142, 35, 0.6);
+	border-radius: 15px;
 }
 
 .spotlights {
@@ -136,10 +143,11 @@ div a {
 }
 
 main section {
-	border: 1px solid #555;
+	border: 3px solid #555;
 	margin: .5em;
 	padding: 1em;
 	background-color:rgb(197, 197, 197);
+	box-shadow: 5px 10px rgba(0,0,0,0.1);
 }
 
 .headings {
@@ -163,6 +171,7 @@ main section {
 
 .join {
 	display: none;
+	position: relative;
 }
 
 .spotlight3 {
