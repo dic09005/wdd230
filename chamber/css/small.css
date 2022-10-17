@@ -98,7 +98,10 @@ nav ul.open {
 	background-color:#bbb;
 	width: 80%;
 	text-align: center;
-	
+}
+
+#banner {
+	display: none;
 }
 
 #hamburgerBtn span:nth-child(1) {display: block;}
