@@ -34,13 +34,14 @@
 
 
     
-    .hero {
+    .hero_img_box {
         position: relative;
         grid-column: 2/3;
 		grid-row: 1/3;
     }
 
     .newrelease {
+        display: block;
         grid-column: 2/3;
         grid-row: 3/4;
     }

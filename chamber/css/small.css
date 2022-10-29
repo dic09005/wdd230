@@ -5,12 +5,60 @@
 	box-sizing: border-box;
 }
 
+/*-----------------PAGE---------------*/
+
+
+
+
+/*-----------------BODY---------------*/
+
 body {
 	margin: .5em;
 	font-size: 16px;
 	font-family: 'Source Sans Pro', sans-serif;
 	background-color: rgb(85, 107, 47, 0.5);
 }
+
+
+
+
+/*-----------------HEADER---------------*/
+
+
+.headings {
+	grid-column: 3/4;
+	grid-row: 1/2;
+}
+
+.m {
+	font-size: 0.8rem;
+}
+
+header {
+	display: grid;
+	grid-template-columns: 10% 27% 43% 20%;
+	grid-template-rows: 5rem 2.5rem;
+}
+
+.date {
+	margin: 0rem;
+	border: 1px solid #bbb;
+	padding: 0.25rem;
+	background-color: rgba(0,0,0,0.4);
+	color: #fff;
+	text-align: center;
+	max-width: 100%;
+	grid-column: 1/5;
+	grid-row: 2/3;
+	border-radius: .5vw;
+}
+ .media {
+	grid-column: 4/5;
+	grid-row: 1/2;
+	max-width: 5vw;
+ }
+
+/*-----------------HEADER/FOOTER---------------*/
 
 header,
 footer {
@@ -21,17 +69,6 @@ footer {
 	padding: .75em;
 }
 
-header {
-	display: grid;
-	grid-template-columns: 10% 27% 43% 20%;
-	grid-template-rows: 5rem 2.5rem;
-}
-
-footer {
-	display: flex;
-	flex-flow: column;
-}
-
 header,
 nav,
 main,
@@ -39,15 +76,7 @@ footer {
 	margin: 0 auto;
 }
 
-h1, p {
-    margin: 0 2vw;
-}
-
-.logo {
-	padding: .5em;
-	border-radius: 50%;
-	width: 70px;
-}
+/*-----------------HEADER"NAV"---------------*/
 
 nav {
 	grid-column: 1/2;
@@ -100,8 +129,10 @@ nav ul.open {
 	text-align: center;
 }
 
-#banner {
-	display: none;
+.logo {
+	padding: .5em;
+	border-radius: 50%;
+	width: 70px;
 }
 
 #hamburgerBtn span:nth-child(1) {display: block;}
@@ -110,17 +141,39 @@ nav ul.open {
 #hamburgerBtn.open span:nth-child(1) {display: none;}
 #hamburgerBtn.open span:nth-child(2) {display: block;}
 
+/*-----------------MAIN---------------*/
+
+main section {
+	border: 3px solid #555;
+	margin: .5em;
+	padding: .25em;
+	background-color:rgb(197, 197, 197);
+	box-shadow: 5px 10px rgba(0,0,0,0.1);
+}
+
+h1, p {
+    margin: 0 2vw;
+}
+
+#banner {
+	display: none;
+}
+
 div a {
 	padding-left: 10px;
 }
 
+h3 {
+	text-align: center;
+	color: black;
+	text-shadow: #fff 1px 1px;
+ }
 
-.hero {
-	background: url("images/istockphoto7.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	min-height: 200px;	
-	position: relative;
+/*-----------------MAIN/HERO---------------*/
+
+.hero_img {
+	max-height: 100%;
+	max-width: 100%;
 }
 
 .overlay {
@@ -131,36 +184,55 @@ div a {
 	border-radius: 15px;
 }
 
-.spotlights {
-	padding: 5px;
-	grid-row: 5/6;
-}
+ .hero_img_box h3 {
+	color: #fff;
+	text-shadow: black 1px 1px;
+	
+ }
+
+
+
+/*-----------------MAIN/EVENT---------------*/
 
 .events {
 	grid-row: 2/3;
 }
 
+/*-----------------MAIN/Weather---------------*/
+
+
+/*-----------------MAIN/JOIN---------------*/
+
+.join {
+	display: none;
+	position: relative;
+}
+
+/*-----------------MAIN/NEW RELEASE---------------*/
+
 .newrelease {
 	grid-row: 4/5;
-	height: fit-content;
+}
+/*-----------------MAIN/SPOTLIGHT---------------*/
+
+.spotlights {
+	padding: 5px;
+	grid-row: 5/6;
 }
 
-main section {
-	border: 3px solid #555;
-	margin: .5em;
-	padding: 1em;
-	background-color:rgb(197, 197, 197);
-	box-shadow: 5px 10px rgba(0,0,0,0.1);
+.spotlight3 {
+	display: none;
 }
 
-.headings {
-	grid-column: 3/4;
-	grid-row: 1/2;
+
+/*-----------------FOOTER---------------*/
+
+footer {
+	display: flex;
+	flex-flow: column;
 }
 
-.m {
-	font-size: 0.8rem;
-}
+
 
 .info {
 	text-align: center;
@@ -172,42 +244,70 @@ main section {
 	padding: 1em;
 }
 
-.join {
-	display: none;
+/*-----------------CLEARFIX: Force an Element Not to Collapse---------------*/
+/*-----------------Want to remember to use later---------------*/
+
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/*-----------------DISCOVER/MAIN---------------*/
+
+body {
+	height: fit-content;
+}
+
+
+main.discover {
+display: flex;
+}
+
+
+div picture.lostpine{
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.lostpine img {
+	min-height: 300px;
+	background-color: antiquewhite;
+	border: 2px solid black;
+}
+
+.lostpine img[data-src] {
+	filter: blur(0.5em);
+}
+
+.lostpine img {
+	grid-column: 1 / 1;
+	filter: blur(0em);
+	transition: 3s;
 	position: relative;
 }
 
-.spotlight3 {
-	display: none;
-}
-
-.date {
-	margin: 0rem;
-	border: 1px solid #bbb;
-	padding: 0.25rem;
-	background-color: rgba(0,0,0,0.4);
-	color: #fff;
-	text-align: center;
+.lostpine img {
 	max-width: 100%;
-	grid-column: 1/5;
-	grid-row: 2/3;
-	border-radius: .5vw;
+	min-height: fit-content;
+	margin-left: 5vw;
 }
- .media {
-	grid-column: 4/5;
-	grid-row: 1/2;
-	max-width: 5vw;
- }
 
-
- h3 {
-	text-align: center;
-	color: black;
-	text-shadow: #fff 1px 1px;
- }
-
- .hero h3 {
+.img_info {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgb(107, 142, 35, 0.6);
 	color: #fff;
-	text-shadow: black 1px 1px;
-	
- }
+	visibility: hidden;
+	opacity: 0;
+}
+
+.hover_info:hover .img_info{
+
+    visibility: visible;
+	opacity: 1;
+}
