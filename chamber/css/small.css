@@ -157,6 +157,7 @@ h1, p {
 
 #banner {
 	display: none;
+	grid-column: 1/5;
 }
 
 div a {
@@ -260,15 +261,9 @@ body {
 	height: fit-content;
 }
 
-
-main.discover {
-display: flex;
-}
-
-
 div picture.lostpine{
 	display: grid;
-	grid-template-columns: 1fr;
+	grid-template-columns: 1fr;	
 }
 
 .lostpine img {
@@ -291,7 +286,7 @@ div picture.lostpine{
 .lostpine img {
 	max-width: 100%;
 	min-height: fit-content;
-	margin-left: 5vw;
+	justify-self: center;
 }
 
 .img_info {
@@ -304,10 +299,4 @@ div picture.lostpine{
 	color: #fff;
 	visibility: hidden;
 	opacity: 0;
-}
-
-.hover_info:hover .img_info{
-
-    visibility: visible;
-	opacity: 1;
 }

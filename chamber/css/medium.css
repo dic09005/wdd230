@@ -89,6 +89,12 @@
         grid-column: 2/3;
         grid-row: 5/6;
     }
+    
+    .hover_info:hover .img_info{
+    
+        visibility: visible;
+        opacity: 1;
+    }
 
 }
 
