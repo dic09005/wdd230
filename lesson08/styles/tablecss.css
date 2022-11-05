@@ -24,6 +24,8 @@ td {
 .title {
     background-color: royalblue;
     color: aliceblue;
+    font-size: x-large;
+    font-weight: bolder;
 }
 
 tr:nth-child(2) td {
