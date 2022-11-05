@@ -103,7 +103,7 @@
             />
           </li>
           <li>
-            <label for="cell">Phone Number:</label>
+            <label for="phone">Phone Number:</label>
             <input
               type="tel"
               id="telephone"
@@ -115,7 +115,7 @@
           <li>
             <label for="bname">Business name:</label>
             <input
-              type="title text"
+              type="text"
               id="bname"
               name="user_bname"
               placeholder="Business name"
@@ -123,20 +123,25 @@
             />
           </li>
           <li>
-            <label for="Membership">Membership Type:</label>
-              <select name="membership" id="selectmembership" onchange="selectResponse()">
-                <option value="" disabled selected>Please Select Membership Type</option>
-                <option value="NP Membership">NP Membership</option>
-                <option value="Bronze Membership">Bronze Membership</option>
-                <option value="Silver Membership">Silver Membership</option>
-                <option value="Gold Membership">Gold Membership</option>
-              </select>
-          </fieldset>
+            <label for="Membertype">Membership Type:</label>
+            <select
+              name="membership"
+              id="selectmembership"
+              onchange="selectResponse()"
+            >
+              <option value="Membership Type" disabled selected>
+                Please Select Membership Type
+              </option>
+              <option value="NP Membership">NP Membership</option>
+              <option value="Bronze Membership">Bronze Membership</option>
+              <option value="Silver Membership">Silver Membership</option>
+              <option value="Gold Membership">Gold Membership</option>
+            </select>
           </li>
           <li>
-            <label for="business description">Business Description:</label>
+            <label for="businessdesc">Business Description:</label>
             <input
-              type="textarea"
+              type="text"
               id="bdesc"
               name="user_bdesc"
               placeholder="Business Description"
