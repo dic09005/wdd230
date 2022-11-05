@@ -2,14 +2,16 @@ date = new Date().getFullYear();
 document.querySelector("#year").innerHTML = date
 document.querySelector("#timestamp").innerHTML = document.lastModified;
 
+function toggleMenu() {
 
-const datefield = document.querySelector(".date");
+    document.getElementById('primaryNav').classList.toggle('open');
+    document.getElementById('hamburgerBtn').classList.toggle('open');
+}
 
-const now = new Date();
-const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
-	now
-);
+const x = document.getElementById('hamburgerBtn')
 
-datefield.innerHTML = `<em>${fulldate}</em>`;
+x.onclick = toggleMenu;
 
-
+const now = new Date()
+const fullDate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(now);
+document.querySelector('date').innerHTML = fullDate;
