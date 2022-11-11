@@ -1,7 +1,4 @@
 @media only screen and (min-width: 600px) {
-
-    /*-----------------MAIN---------------*/
-
 	h1 {
 		font-size: 2rem;
 	}
@@ -40,7 +37,7 @@
         border-right: 1px solid rgba(0, 0, 0, 0.3);
     }
 
-	main .home {
+	main {
         display: grid;
         gap: 15px 15px;
         grid-template-columns: 1fr 1fr;
@@ -48,13 +45,8 @@
         
 	}
 
-    .hero_img_box {
+    .hero {
         grid-column: 1/3;
-    }
-
-    .hero_img {
-        max-height: 100%;
-        max-width: 100%;
     }
 
     .newrelease {
@@ -89,13 +81,5 @@
         grid-column: 2/3;
         grid-row: 5/6;
     }
-    
-    .hover_info:hover .img_info{
-    
-        visibility: visible;
-        opacity: 1;
-    }
 
 }
-
-

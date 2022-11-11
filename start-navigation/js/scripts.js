@@ -1,6 +1,5 @@
 
-hamburgerBtn
-primaryNav
+
 
 
 function toggleMenu() {

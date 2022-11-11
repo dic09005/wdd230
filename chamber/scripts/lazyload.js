@@ -1,6 +1,6 @@
 
 // Brother Blazzard's codepin
-
+/* 
 let imagesToLoad = document.querySelectorAll("img[data-src]");
 
 const ingOptions = {
@@ -35,4 +35,4 @@ const loadImages = (image) => {
       loadImages(img);
     });
   }
-
+*/

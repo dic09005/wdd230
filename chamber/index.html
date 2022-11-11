@@ -8,12 +8,12 @@
     <link rel="shortcut icon" href="images/favicon.ico" />
     <!-- STYLE SHEETS -->
     <link href="css/normalize.css" rel="stylesheet" />
+    <!-- phone-default -->
     <link href="css/small.css" rel="stylesheet" />
+    <!-- enhance-tablet -->
     <link href="css/medium.css" rel="stylesheet" />
+    <!-- enhance-desktop -->
     <link href="css/large.css" rel="stylesheet" />
-    <!-- SCRIPTS -->
-    <script src="scripts/date.js"></script>
-    <script src="scripts/scripts.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -26,14 +26,14 @@
       <nav>
         <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
         <ul id="primaryNav">
-          <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="discover.html">Discover</a></li>
+          <li class="active"><a href="index.html">Discover</a></li>
+          <li><a href="directory.html">Directory</a></li>
           <li><a href="join.html">Join</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
       <div>
-        <img class="logo" src="images/logo.webp" alt="Logo" />
+        <img class="logo" src="images/logo.jpg" alt="Logo" />
       </div>
       <section class="headings">
         <h1>Lost Pine</h1>
@@ -52,35 +52,9 @@
         🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
       </div>
     </header>
-    <main class="home">
-      <section class="hero_img_box">
+    <main>
+      <section class="hero">
         <h3>Welcome to Lost Pine Chamber of Commerce</h3>
-        <picture class="heroimg">
-          <source
-            media="(min-width: 200px) and (max-width: 550px)"
-            srcset="images/week06small400.jpg"
-            class="hero_img"
-            loading="lazy"
-          />
-          <source
-            media="(min-width: 551px) and (max-width: 650px)"
-            srcset="images/week06medium650.jpg"
-            class="hero_img"
-            loading="lazy"
-          />
-          <source
-            media="(min-width: 651px) and (max-width: 800px)"
-            srcset="images/week06large800.jpg"
-            class="hero_img"
-            loading="lazy"
-          />
-          <img
-            src="images/week06full1280.jpg"
-            class="hero_img"
-            alt="hero img"
-            loading="lazy"
-          />
-        </picture>
         <section class="overlay">
           <h2>Come Join Us</h2>
         </section>
@@ -90,25 +64,7 @@
       </section>
       <section class="weather">
         <h3>Weather</h3>
-        <h3>Lost Pine</h3>
-        <p>
-          Temp
-          <span id="temp"></span>
-          °F
-        </p>
-        <p>
-          Wind Speed <br />
-          <span id="wspeed"></span>
-          mph
-        </p>
-        <p>Precipitation: 30%</p>
-        <p>Humidity: 83%</p>
-        <p>
-          Windchill
-          <span class="windchill"></span> °F
-        </p>
       </section>
-
       <section class="newrelease">
         <h3>New Release</h3>
         <p>
@@ -117,7 +73,8 @@
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat. Duis aute irure dolor in
           reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur.
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
         </p>
       </section>
       <section class="join">
@@ -137,7 +94,7 @@
     </main>
     <footer>
       <div>
-        <img class="logo" src="images/logo.webp" alt="Logo" width="60" />
+        <img class="logo" src="images/logo.jpg" alt="Logo" width="60" />
       </div>
       <section class="info">
         <p>
@@ -156,8 +113,8 @@
         <span id="timestamp"></span>
       </div>
       <script src="scripts/date.js"></script>
-      <script src="scripts/windchill.js"></script>
       <script src="scripts/scripts.js"></script>
+      <script src="scripts/windchill.js"></script>
       <a href="https://goo.gl/maps/JTD5ADW9fkLpBaTk7">
         <img src="images/pin_icon.png" alt="Find Me" style="width: 5vw" />
       </a>
