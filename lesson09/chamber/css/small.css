@@ -174,10 +174,13 @@ h3 {
 
 /*-----------------MAIN/HERO---------------*/
 
-.hero_img {
-	max-height: 100%;
-	max-width: 100%;
-}
+@supports (object-fit: cover) {
+	.hero_image {
+	  width: 100%;
+	  object-fit: cover;
+	  object-position: 0% 30%;
+	}
+  }
 
 .overlay {
 	position: absolute;
@@ -422,32 +425,61 @@ label {
 
 /* Directory Cards */ 
 
-.flow {
+.membergrid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
   
-.flow section {
+.membergrid section {
     margin: 0.25rem;
     padding: 0.35rem;
-    background-color: tan;
+    background-color: lightgray ;
     border: 1px solid #bbb;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .flow section > p {
+
+  .membergrid section h2 {
+	margin-top: 10px;
+  }
+
+  .membergrid section > p {
     min-height: 60px;
   }
   
-  .flow section img {
-    width: auto;
-    max-width: 325px;
+  .membergrid section img {
     box-shadow: 0 0 30px #777;
-    height: 275px;
     border: 1px solid #333;
+	margin: 5vw;
   }
 
-  .flow section p {
+  .membergrid section p {
     min-height: 8px;
+	margin: 8px;
+	text-align: start;
+  }
+
+  .memberlist section {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+    margin: 0.5em;
+    padding: 0.35rem;
+  }
+  
+  div.memberlist p,
+  div.memberlist h2,
+  div.memberlist a {
+	margin-left: 20px;
+  }
+  
+  div.memberlist h2 {
+	font-size: smaller;
+	width: 200px;
+  }
+  
+  div.memberlist img {
+	align-self: center;
+	display: none;
   }

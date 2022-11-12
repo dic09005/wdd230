@@ -1,7 +1,7 @@
 // Add Directory cards/list
 
 
-const requestURL = 'chamber/json/data.json';
+const requestURL = 'json/data.json';
 const cards = document.querySelector('.cards');
 
 fetch(requestURL)
@@ -9,24 +9,25 @@ fetch(requestURL)
     return response.json();
   })
   .then(function (jsonObject) {
-    console.table(jsonObject);  // temporary checking for valid response and data parsing
-    const members = jsonObject['members'];
-    member.forEach(displayMember);
+      console.table(jsonObject); // temporary checking for valid response and data parsing
+      const members = jsonObject["data"];
+      members.forEach(displayMembers);
   });
 
-  /* gridButton = document.getElementById("grid");
+  gridButton = document.getElementById("grid");
   listButton = document.getElementById("list");
   display = document.getElementById("member-data")
+  display.classList.add("membergrid");
 
   gridButton.addEventListener("click", () => {
-      display.classList.add("member-grid");
-      display.classList.remove("member-list");
+      display.classList.add("membergrid");
+      display.classList.remove("memberlist");
   });
 
   listButton.addEventListener("click", () => {
-      display.classList.remove("member-grid");
-      display.classList.add("member-list");
-  }); */
+      display.classList.remove("membergrid");
+      display.classList.add("memberlist");
+  });
 
 
 function displayMembers(member) {
@@ -35,10 +36,10 @@ function displayMembers(member) {
     let memberlogo = document.createElement('img');
     let membername = document.createElement('h2');
     let memberaddress = document.createElement('p');
-    let memberphonenumber = document.createElement('a');
+    let memberphonenumber = document.createElement('p');
     let memberwebURL = document.createElement('a');
-    let membershiplevel = document.createElement('a');
-    let memberSince = document.createElement('a');
+    let membershiplevel = document.createElement('p');
+    let memberSince = document.createElement('p');
   
     // Change the textContent property of the h2 element to contain the prophet's full name
     // h2.textContent = prophet.name + ' ' + prophet.lastname;
@@ -48,19 +49,24 @@ function displayMembers(member) {
     memberlogo.setAttribute('src', member.memberlogo);
     memberlogo.setAttribute('alt', membername);
     memberlogo.setAttribute('loading', 'lazy');
-    /* memberlogo.width = 150;*/
+    memberlogo.width = 200;
 
-    memberaddress.textContent = `Address ${member.memberaddress}`
-    memberphonenumber.textContent = `Phone Number ${member.memberphonenumber}`
-    memberwebURL.textContent = `Web Site ${member.memberwebURL}`
-    membershiplevel.textContent = `Level ${member.membershiplevel}`
+    memberaddress.textContent = `Address: ${member.memberaddress}`
+    memberphonenumber.textContent = `Phone Number: ${member.memberphonenumber}`
+    memberwebURL.textContent = `Click Here Visit Our Web Site`;
+    memberwebURL.href = member.memberwebURL;
+
+    membershiplevel.textContent = `Level: ${member.membershiplevel}`
     memberSince.textContent = `Member Since: ${member.memberSince}`  
 
     // Add/append the section(card) with the h2 element
+    
     card.appendChild(membername);
+    card.appendChild(memberlogo);
     card.appendChild(memberaddress);
     card.appendChild(memberphonenumber);
     card.appendChild(memberwebURL);
+    card.appendChild(membershiplevel);
     card.appendChild(memberSince);
 
   
