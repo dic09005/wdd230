@@ -14,6 +14,7 @@
     <link href="css/medium.css" rel="stylesheet" />
     <!-- enhance-desktop -->
     <link href="css/large.css" rel="stylesheet" />
+    <script src="scripts/members.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -51,22 +52,22 @@
       <div class="date"></div>
       <div id="banner"></div>
     </header>
-    <main>
+    <main class="directory">
       <section class="hero">
         <h3>
           Welcome to Lost Pine Chamber of Commerce <br />
           Directory!
         </h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>
       </section>
+      <section class="directoryButtons">
+        <button class="directoryButton" id="grid">
+          <img src="images/card_icon.png" height="45" width="45" />
+        </button>
+        <button class="directoryButton" id="list">
+          <img src="images/list_icon.png" height="45" width="45" />
+        </button>
+      </section>
+      <div class="card list flow" id="member-data"></div>
     </main>
     <footer>
       <div>
@@ -88,7 +89,6 @@
         Last Updated |
         <span id="timestamp"></span>
       </div>
-      <script src="scripts/date.js"></script>
       <script src="scripts/scripts.js"></script>
       <a href="https://goo.gl/maps/JTD5ADW9fkLpBaTk7">
         <img src="images/pin_icon.png" alt="Find Me" style="width: 5vw" />

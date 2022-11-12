@@ -409,3 +409,45 @@ label {
 	border-color: rgb(32, 190, 0);
   }
   
+
+  /*  Directory Main  */
+  
+  .directoryButtons {
+		text-align: center;
+  }
+
+  .directoryButtons img:hover {
+	background-color: rgba(0,0,0,0.3);
+  }
+
+/* Directory Cards */ 
+
+.flow {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+  
+.flow section {
+    margin: 0.25rem;
+    padding: 0.35rem;
+    background-color: tan;
+    border: 1px solid #bbb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .flow section > p {
+    min-height: 60px;
+  }
+  
+  .flow section img {
+    width: auto;
+    max-width: 325px;
+    box-shadow: 0 0 30px #777;
+    height: 275px;
+    border: 1px solid #333;
+  }
+
+  .flow section p {
+    min-height: 8px;
+  }
