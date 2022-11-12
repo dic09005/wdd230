@@ -108,3 +108,12 @@ if (temp<=50) {
     else {
         document.querySelector("#windchill").innerHTML = 'N/A'
     }
+
+// Set date on Join page
+
+/* NEED TO DO!!!!!!!!!!!!!!! */
+
+if (URL == "join.html") {
+    document.getElementById("application_date").value = date.getTime();
+}
+
