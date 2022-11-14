@@ -1,7 +1,6 @@
 {
     "data": [
       {
-        "index": 0,
         "membername": "AmeriTitle",
         "memberaddress": "480 Rigby Lake Dr, Rigby, ID 83442",
         "memberphonenumber": "208-745-1090",
@@ -11,7 +10,6 @@
         "memberSince": "February 2020"
       },
       {
-        "index": 1,
         "membername": "Beehive Federal Credit Union",
         "memberaddress": "250 South State; Rigby, ID 83442",
         "memberphonenumber": "208-656-1000",
@@ -21,7 +19,6 @@
         "memberSince": "February 2020"
       },
       {
-        "index": 2,
         "membername": "Broulim's Fresh Foods",
         "memberaddress": "150 N State Street",
         "memberphonenumber": "208-745-7771",
@@ -31,7 +28,6 @@
         "memberSince": "February 2020"
       },
       {
-        "index": 3,
         "membername": "DL Evans Bank",
         "memberaddress": "135 Fransworth Way, Rigby, ID 83442",
         "memberphonenumber": "208-745-8107",
@@ -41,7 +37,6 @@
         "memberSince": "February 2020"
       },
       {
-        "index": 4,
         "membername": "EyeCare of Rigby",
         "memberaddress": "711 Rigby Lake Drive Ste. 301; Rigby, ID 83442",
         "memberphonenumber": "208-745-0181",
@@ -51,7 +46,6 @@
         "memberSince": "February 2020"
       },
       {
-        "index": 5,
         "membername": "Floral Classics, Inc",
         "memberaddress": "129 East Main St.; Rigby, ID 83442",
         "memberphonenumber": "208-745-0051",
@@ -61,7 +55,6 @@
         "memberSince": "February 2020"
       },
       {
-        "index": 6,
         "membername": "George & Jesse's Les Schwab Tire Center",
         "memberaddress": "126 S. State; Rigby, ID 83442",
         "memberphonenumber": "208-745-7722",
@@ -71,7 +64,6 @@
         "memberSince": "February 2020"
       },
       {
-        "index": 7,
         "membername": "Idaho Drug",
         "memberaddress": "139 E Main; Rigby, ID 83442",
         "memberphonenumber": "208-745-6831",
@@ -81,7 +73,6 @@
         "memberSince": "April 2011"
       },
       {
-        "index": 8,
         "membername": "KLIM, USA",
         "memberaddress": "3753 Countyline Rd; Rigby ID 83442",
         "memberphonenumber": "208-552-7433",
@@ -91,7 +82,6 @@
         "memberSince": "February 2020"
       },
       {
-        "index": 9,
         "membername": "Scotty's True Value Hardware",
         "memberaddress": "201 South State; Rigby, ID 83442",
         "memberphonenumber": "208-745-6498",
