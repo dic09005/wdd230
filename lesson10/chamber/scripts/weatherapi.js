@@ -1,4 +1,4 @@
-//Most of this is from Brother Blazzards Lab windchill formula is from dev.to Chris Bongers
+//Most of this is from Brother Blazzards Lab. Parts of windchill formula from dev.to Chris Bongers
 
 // select HTML elements in the document
 const currentTemp = document.querySelector('#current-temp');

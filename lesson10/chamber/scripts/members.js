@@ -1,4 +1,4 @@
-// Add Directory cards/list
+// Add Directory cards/list. Most of this is from the Prophets assignment
 
 
 const requestURL = 'json/data.json';

@@ -157,9 +157,10 @@ h1, p {
     margin: 0 2vw;
 }
 
-#banner {
-	display: none;
+div#banner1 {
 	grid-column: 1/5;
+	text-align: center;
+	
 }
 
 div a {
