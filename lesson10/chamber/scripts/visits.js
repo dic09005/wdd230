@@ -1,4 +1,3 @@
-
 // initialize display elements
 const visitsDisplay = document.querySelector(".visits");
 
@@ -33,6 +32,7 @@ let timeBetweenVisits = Number(window.localStorage.getItem("visits"));
 
 localStorage.setItem("timestamp", todayDisplay);
 
+/*
 const lastVisit = getCookie('lastVisitTime');
 const now = Date.now();
 if (lastVisit) {
@@ -40,3 +40,4 @@ if (lastVisit) {
    alert(`It's been ${hoursSinceLastTime} hour(s) since you last visited us.`);
 }
 setCookie('lastVisitTime', todayDisplay);
+*/

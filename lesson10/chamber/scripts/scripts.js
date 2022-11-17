@@ -1,15 +1,17 @@
 
 //Text banner
-/*
-let day = bdate.getDay();
-if (day == 1 || day ==2) {
-    let banner = document.getElementById("banner");
-    if (banner != undefined) {
-        banner.style.display = "block";
-        banner.innerText = "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.";
-    }
+const d = new Date();
+let day1 = d.getDay()
+// console.log(day1)
+
+if (day1 == 1 || day1 ==4) {
+  let banner1 = "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.";
+  // console.log(banner1)
+  document.getElementById("banner1").innerHTML = banner1;
 }
-*/
+
+
+
 
 // Date header and footer
 
