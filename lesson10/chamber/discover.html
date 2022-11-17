@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lost Pine Chamber of Commerce Discover</title>
+    <meta name="description" content="Chamber of Commerce Website" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <!-- STYLE SHEETS -->
+
+    <link href="css/small.css" rel="stylesheet" />
+    <link href="css/medium.css" rel="stylesheet" />
+    <link href="css/large.css" rel="stylesheet" />
+    <script src="scripts/visits.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+        <ul id="primaryNav">
+          <li><a href="index.html">Home</a></li>
+          <li class="active"><a href="discover.html">Discover</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div>
+        <img class="logo" src="images/logo.webp" alt="Logo" />
+      </div>
+      <section class="headings">
+        <h1>Lost Pine</h1>
+        <p class="m">Chamber of Commerce</p>
+      </section>
+      <div class="media">
+        <a href="https://www.facebook.com">
+          <img class="media" src="images/facebook.png" alt="facebooklogo" />
+        </a>
+        <a href="https://www.instagram.com">
+          <img class="media" src="images/instagram.png" alt="Instagramlogo" />
+        </a>
+      </div>
+      <div class="date"></div>
+      <div id="banner" style="display: block">
+        🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
+      </div>
+    </header>
+    <main class="discover">
+      <h2>Discover Lost Pine Idaho</h2>
+      <div class="demographic">
+        Lost Pine, Idaho <br />
+        County Lemhi <br />
+        Population 3,121 <br />
+        Households 1,420 <br />
+        Language English <br />
+        Veterans 292 <br />
+      </div>
+      <p><span class="lable">Visits: </span><span class="visits"></span></p>
+      <p>
+        <span class="lable">Days between Visits: </span
+        ><span class="dbvisits"></span>
+      </p>
+      <div class="discover">
+        <picture class="lostpine"
+          ><img
+            class="hover_info"
+            src="https://place-puppy.com/300x400"
+            data-src="images\booatzoo.jpg"
+            alt="zoo"
+            loading="lazy"
+          />
+          <div class="textover">
+            2022 Trick-or-treat at the Zoo <br />
+            Enjoy the zoo in all of its fall colors!
+          </div>
+        </picture>
+        <picture class="lostpine"
+          ><img
+            class="hover_info"
+            src="https://place-puppy.com/300x400"
+            data-src="images\car.jpg"
+            alt="car"
+            loading="lazy"
+          />
+          <div class="textover">
+            2022 Summer Car Show <br />
+            Our summer car show rocks!
+          </div>
+        </picture>
+        <picture class="lostpine"
+          ><img
+            class="hover_info"
+            src="https://place-puppy.com/300x400"
+            data-src="images\elk.jpg"
+            alt="elk"
+            loading="lazy"
+          />
+          <div class="textover">
+            Cow Elk Comes To Town <br />
+            A few elk come to enjoy the sun and the river.
+          </div>
+        </picture>
+        <picture class="lostpine"
+          ><img
+            class="hover_info"
+            src="https://place-puppy.com/300x400"
+            data-src="images\zoo.jpg"
+            alt="bird"
+            loading="lazy"
+          />
+          <div class="textover">Birds at the zoo</div>
+        </picture>
+        <picture class="lostpine"
+          ><img
+            class="hover_info"
+            src="https://place-puppy.com/300x400"
+            data-src="images\lion.jpg"
+            alt="lion"
+            loading="lazy"
+          />
+          <div class="textover">
+            Lion at the zoo <br />
+            Hando the Lion eyeing the Trick-or-treaters!
+          </div>
+        </picture>
+      </div>
+    </main>
+    <footer>
+      <div>
+        <img class="logo" src="images/logo.webp" alt="Logo" width="60" />
+      </div>
+      <section class="info">
+        <p>
+          Lost Pine <br />
+          Chamber of Commerce<br />
+          121 Elkcreek Dr<br />
+          Lost Pine Idaho<br />
+          info@lostpine.org <br />
+          (208) 681-1111<br />
+          <br />
+        </p>
+      </section>
+      <div class="aboutMe">
+        © <span id="year"></span> | WDD230 Project | Robin Dickson | Rigby, ID
+        Last Updated |
+        <span id="timestamp"></span>
+      </div>
+      <!-- SCRIPTS -->
+      <script src="scripts/scripts.js"></script>
+      <a href="https://goo.gl/maps/JTD5ADW9fkLpBaTk7">
+        <img src="images/pin_icon.png" alt="Find Me" style="width: 5vw" />
+      </a>
+    </footer>
+  </body>
+</html>
