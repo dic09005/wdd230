@@ -4,7 +4,7 @@ const d = new Date();
 let day1 = d.getDay()
 // console.log(day1)
 
-if (day1 == 1 || day1 ==4) {
+if (day1 == 1 || day1 ==2) {
   let banner1 = "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.";
   // console.log(banner1)
   document.getElementById("banner1").innerHTML = banner1;
