@@ -196,7 +196,7 @@ h3 {
  .hero_img_box h3 {
 	color: #fff;
 	text-shadow: black 1px 1px;
-	
+	font-size: x-large;
  }
 
 
@@ -339,6 +339,12 @@ div picture.lostpine{
 	padding: 2vw;
 }
 
+.discover h3 {
+	font-size: 2em;
+	text-align: center;
+	padding: 2vw;
+}
+
 .demographic {
 	text-align: center;
 	font-size: 2em;
@@ -349,6 +355,33 @@ div.discover {
 	display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
+
+
+.hover_info {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.textover {
+	position: absolute;
+	top: 0;
+	background: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, 0.5); /* Black see-through */
+	color: #f1f1f1;
+	width: 100%;
+	transition: .5s ease;
+	opacity:0;
+	color: white;
+	font-size: 20px;
+	padding: 20px;
+	text-align: center;
+}
+
+.lostpine:hover .textover {
+	opacity: 1;
+}
+
 
 
 /*-----------------JOIN/MAIN---------------*/
@@ -541,4 +574,16 @@ section.contactus, section.message {
 	background-color: rgb(200, 218, 164);
 	padding: 0.25rem;
 	border-radius: 5px;
+  }
+
+  .contactimg {
+	grid-column: 1/3;
+	text-align: center;
+  }
+
+  img.support {
+	width: 100%;
+	height: auto;
+	max-height: 100%;
+	object-fit: fill;
   }
