@@ -22,6 +22,14 @@
         display: inline-flex;
     }
 
+    main section {
+        min-height: 180px;
+    }
+
+    section.overlay {
+        min-height: 20px;
+    }
+
 	nav ul li a {
         padding: .5rem 1rem;
 
@@ -30,7 +38,7 @@
 	.home {
         display: grid;
 		grid-template-columns: 1fr 2fr 1fr;
-		grid-template-rows: 20vh 20vh 20vh;
+		grid-template-rows: 1fr 1fr 1fr;
 	}
 
 
