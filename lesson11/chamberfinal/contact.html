@@ -34,7 +34,9 @@
         </ul>
       </nav>
       <div>
-        <img class="logo" src="images/logo.jpg" alt="Logo" />
+        <a href="index.html">
+          <img class="logo" src="images/logo.webp" alt="Logo" />
+        </a>
       </div>
       <section class="headings">
         <h1>Lost Pine</h1>
@@ -51,20 +53,52 @@
       <div class="date"></div>
       <div id="banner1"></div>
     </header>
-    <main>
-      <section class="hero">
-        <h3>
-          Welcome to Lost Pine Chamber of Commerce <br />
-          Please Contact Us!
-        </h3>
+    <main class="contactmain">
+      <section class="contactus">
+        <h3>Contact Form</h3>
+        <form action="thankyou.html">
+          <ul>
+            <li>
+              <label for="name">Name:</label>
+              <input
+                type="text"
+                id="name"
+                name="user_name"
+                placeholder="John Smith"
+                required
+              />
+            </li>
+            <li>
+              <label for="mail">E-mail:</label>
+              <input
+                type="email"
+                id="mail"
+                name="user_email"
+                placeholder="user@email.org"
+                required
+              />
+            </li>
+            <li>
+              <label for="msg">Message:</label>
+              <textarea id="msg" name="user_message" required></textarea>
+            </li>
+            <li class="cbutton">
+              <button type="submit">Get in touch</button>
+            </li>
+          </ul>
+        </form>
+      </section>
+      <section class="message">
+        <h3>Lost Pine Chamber of Commerce</h3>
+        <h3>--Please visit us at--</h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          121 Elkcreek Dr <br />
+          Lost Pine Idaho<br />
+        </p>
+        <h3>--Or contact us at--</h3>
+        <p>
+          info@lostpine.org <br />
+          (208) 681-1111<br />
         </p>
       </section>
     </main>

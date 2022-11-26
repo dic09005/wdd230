@@ -22,22 +22,20 @@ let todayDisplay = Date.now();
 
 // Adding the Days Between Visits
 
-// initialize display elements
-const daysBetweenVisits = document.querySelector(".dbvisits");
 
-// get the stored value in localStorage
-let timeBetweenVisits = Number(window.localStorage.getItem("visits"));
 
-// Determine the time between days
+let dateofvisit = new Date();
 
-localStorage.setItem("timestamp", todayDisplay);
+window.localStorage.setItem("date", dateofvisit.getTime());
 
-/*
-const lastVisit = getCookie('lastVisitTime');
-const now = Date.now();
-if (lastVisit) {
-   const hoursSinceLastTime = Math.ceil((parseInt(lastVisit) - todayDisplay) / 3600);
-   alert(`It's been ${hoursSinceLastTime} hour(s) since you last visited us.`);
-}
-setCookie('lastVisitTime', todayDisplay);
-*/
+let date1 = window.localStorage.getItem("date");
+
+let date2 = new Date();
+
+let Difference_In_Time = date2.getTime() - date1;
+
+let Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24);
+
+console.log(Difference_In_Days)
+
+document.querySelector(".dbvisits").innerHTML = Difference_In_Days;
