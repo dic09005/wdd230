@@ -1,0 +1,140 @@
+
+/* Header */
+
+header {
+    display: grid;
+    background-color: rgb(102, 205, 170);
+    padding: 4vw;
+    grid-template-columns: .25fr 2fr .5fr;
+    min-height: 140px;
+}
+
+
+/* Header Logo */
+
+header div img.logo {
+    padding-right: 15px;
+}
+
+/* Header Title */
+
+div.heading {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: x-large;
+    padding-top: 20px;
+}
+
+div.heading p, div.heading h1 {
+    margin: 0;
+}
+
+/* Header Media */
+
+div.media {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+div.media a img {
+    
+    height: 50px;
+}
+
+/* Nav */
+
+nav {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(246, 198, 83);
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    border-bottom: 2px solid black;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    text-align: center;
+
+
+}
+
+nav ul li a {
+    display: block;
+    padding: .4rem;
+    text-decoration: none;
+    text-align: center;
+    font-size: xx-large;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: 800;
+    border-right: 2px solid black;
+
+}
+
+nav ul li a:hover {
+    background-color: rgba(102, 205, 170);
+}
+
+nav ul li.active a {
+    background-color: rgba(198, 245, 15);
+}
+
+
+
+/* Footer */
+
+footer {
+    display: grid;
+    background-color: rgb(102, 205, 170);
+    padding: 4vw;
+    grid-template-columns: 1fr;
+    min-height: 140px;
+    text-align: center;
+}
+
+/* Home Main */
+
+main.home {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: 800;
+}
+
+div.hero {
+    display: none;
+}
+
+.home div img {
+    width: 100%;
+    max-width: 1200px;
+	height: auto;
+	object-fit: fill;
+}
+
+div.orderhistory {
+    position: relative;
+}
+
+div.order {
+    position: relative;
+}
+
+div.weather {
+    position: relative;
+}
+
+div.overlay {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    padding: 15px;
+    background-color: rgba(246, 198, 83, 0.6);
+}
