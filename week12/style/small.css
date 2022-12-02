@@ -106,6 +106,8 @@ main.home {
     grid-template-rows: 1fr 1fr 1fr 1fr;
     font-family: 'Shadows Into Light', cursive;
     font-weight: 800;
+    text-align: center;
+    background-color: rgb(246, 198, 83);
 }
 
 div.hero {
@@ -125,16 +127,24 @@ div.orderhistory {
 
 div.order {
     position: relative;
+    grid-row: 1/2;
+
 }
 
 div.weather {
     position: relative;
+    max-height: 675px;
 }
 
 div.overlay {
     position: absolute;
     top: 20px;
-    left: 10px;
+    left: 10vw;
     padding: 15px;
     background-color: rgba(246, 198, 83, 0.6);
 }
+
+div.summary {
+    background-color: rgb(246, 198, 83);
+}
+
