@@ -148,3 +148,59 @@ div.summary {
     background-color: rgb(246, 198, 83);
 }
 
+/*  Main Fresh */
+
+main.fresh {
+    background-color: rgba(198, 245, 15);
+}
+
+form.order {
+	display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+form.order, ul.form {
+	list-style: none;
+	padding: 0;
+	margin: 1em;
+	justify-content: center;
+
+}
+
+li label {
+	display: inline-block;
+	width: 90px;
+	text-align: center;
+	font-size: large;
+  }
+
+li input {
+	font: 1em;
+	width: 300px;
+	box-sizing: border-box;
+	border: 2px solid #555;
+	border-radius: 5px;
+	padding: 0.5rem;
+	background-color: rgb(232, 255, 255);
+  }
+
+select#fruit1, select#fruit2, select#fruit3 {
+    font: 1em;
+	width: 300px;
+	box-sizing: border-box;
+	border: 2px solid #555;
+	border-radius: 5px;
+	padding: 0.5rem;
+	background-color: rgb(232, 255, 255);
+}
+
+.order_now {
+    font: 1em;
+    width: 300px;
+	box-sizing: border-box;
+    border: 2px solid #555;
+	border-radius: 5px;
+	padding: 0.5rem;
+	background-color: rgb(232, 255, 255);
+}
