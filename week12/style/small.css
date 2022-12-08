@@ -152,12 +152,19 @@ div.summary {
 
 main.fresh {
     background-color: rgba(198, 245, 15);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: 800;
 }
 
 form.order {
 	display: flex;
     flex-direction: column;
     text-align: center;
+    max-width: 425px;
+
 }
 
 form.order, ul.form {
@@ -166,6 +173,10 @@ form.order, ul.form {
 	margin: 1em;
 	justify-content: center;
 
+}
+
+ul.form li {
+    margin: 10px;
 }
 
 li label {

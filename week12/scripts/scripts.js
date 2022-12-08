@@ -102,6 +102,7 @@ request.onload = function() {
     let option1;
     let option2;
     let option3;
+    // Iterate through Json list and get options for drop down
     for (let i = 0; i < data.length; i++) {
       option1 = document.createElement('option');
       option1.text = data[i].name;
@@ -120,7 +121,7 @@ request.onload = function() {
       dropdown3.add(option3);
 
     }
-    // console.log(data)
+    // console.log(data) // Verify options
    } else {
   }
      
@@ -128,24 +129,33 @@ request.onload = function() {
 
 request.send();
 
+// On Button Click Record Selections
 
 function selectResponse() {
 	let a = document.getElementById('fruit1');
 	let text1 = a.options[a.selectedIndex].text;
   let choice1 = text1;
+  let id_1 = a.options[a.selectedIndex].value;
 
   let b = document.getElementById('fruit2');
 	let text2 = b.options[b.selectedIndex].text;
   let choice2 = text2;
+  let id_2 = b.options[b.selectedIndex].value;
 
   let c = document.getElementById('fruit3');
 	let text3 = c.options[c.selectedIndex].text;
   let choice3 = text3;
+  let id_3 = c.options[c.selectedIndex].value;
 
   console.log(choice1)
+  console.log(id_1)
   console.log(choice2)
+  console.log(id_2)
   console.log(choice3)
+  console.log(id_3)
 }
+
+
 
 
 /* 
@@ -163,7 +173,7 @@ function selectResponse() {
 
 const b = document.getElementById('order_now')
 
-function getInfo() {
+function receiptInfo() {
   let receipt = document.createElement('section');
   let first_name = document.createElement('p');
   let email = document.createElement('p');
