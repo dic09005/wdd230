@@ -40,4 +40,11 @@
         grid-column: 1/3;
     }
 
+
+    /* Main About */
+    main.about {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
 }

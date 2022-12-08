@@ -146,6 +146,17 @@ div.overlay {
 
 div.summary {
     background-color: rgb(246, 198, 83);
+
+}
+
+div.summary p {
+    border-top: 2px solid black;;
+    margin: 2vw;
+    padding: 15px;
+}
+
+div.orderhistory, div.order, div.weather {
+    background-color: rgba(198, 245, 15);
 }
 
 /*  Main Fresh */
@@ -159,7 +170,12 @@ main.fresh {
     font-weight: 800;
 }
 
+.fresh div.hero {
+    grid-column: 1/2;
+}
+
 form.order {
+    grid-column: 2/3;
 	display: flex;
     flex-direction: column;
     text-align: center;
@@ -214,4 +230,28 @@ select#fruit1, select#fruit2, select#fruit3 {
 	border-radius: 5px;
 	padding: 0.5rem;
 	background-color: rgb(232, 255, 255);
+}
+
+.fresh div.receipt {
+    grid-column: 3/4;
+}
+
+/* Main About */
+
+main.about {
+    background-color: rgba(198, 245, 15);
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: 800;
+}
+
+.about div.hero {
+    grid-column: 1/2;
+}
+
+.about div.about_us {
+    text-align: center;
+    margin: 5vw;
 }
