@@ -24,8 +24,6 @@ main.home {
     grid-template-rows: 2fr 1fr 1fr;
 }
 
-
-
 div.order {
     grid-column: 2/3;
     grid-row: 2/3;
@@ -41,7 +39,6 @@ div.hero {
 div.weather {
     grid-row: 2/3;
     grid-column: 1/2;
-
 }
 
 div.orderhistory {
@@ -52,6 +49,34 @@ div.orderhistory {
 div.summary {
     grid-row: 3/4;
     grid-column: 1/4;
+}
+
+main.fresh {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.fresh div.hero {
+    background-color: rgba(198, 245, 15);
+    display: block;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    max-width: 750px;
+    justify-self: center;
+}
+
+form.order {
+    grid-column: 2/3;
+    justify-self: center;
+}
+
+.fresh div.receipt {
+    grid-column: 3/4;
+}
+
+.fresh .hero img {
+    box-shadow: 10px 5px 5px rgb(246, 198, 83);
 }
 
 }

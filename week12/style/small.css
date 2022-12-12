@@ -132,7 +132,6 @@ div.orderhistory {
 div.order {
     position: relative;
     grid-row: 1/2;
-
 }
 
 div.weather {
@@ -152,7 +151,6 @@ div.overlay {
 
 div.summary {
     background-color: rgb(246, 198, 83);
-
 }
 
 div.summary p {
@@ -177,9 +175,7 @@ main.fresh {
 }
 
 .fresh div.hero {
-    grid-column: 1/2;
-    background-color: rgba(198, 245, 15);
-
+    display: none;
 }
 
 form.order {
@@ -247,8 +243,16 @@ select#fruit1, select#fruit2, select#fruit3 {
 }
 
 .fresh div.receipt {
-    grid-column: 1/2;
+    grid-column: 2/3;
     grid-row: 2/3;
+	display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 1em;
+    max-width: 425px;
+    background-color:  rgb(232, 255, 255);
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px rgb(246, 198, 83);
 }
 
 /* Main About */
