@@ -27,7 +27,7 @@ async function apiFetch() {
       const response = await fetch(url);
       if (response.ok) {
         const data = await response.json();
-        //console.log(data); 
+        console.log(data); 
         displayResults(data);
       } else {
           throw Error(await response.text());
@@ -96,7 +96,7 @@ const requestURL = 'JSON/data.json';
 const request = new XMLHttpRequest();
 request.open('GET', requestURL, true);
 
-request.onload = function() {
+request.onload = function(jsonObject) {
   if (request.status === 200) {
     const data = JSON.parse(request.responseText);
     let option1;
@@ -106,22 +106,22 @@ request.onload = function() {
     for (let i = 0; i < data.length; i++) {
       option1 = document.createElement('option');
       option1.text = data[i].name;
-      option1.value = data[i].id
+      option1.value = data[i].id;
 
       option2 = document.createElement('option');
       option2.text = data[i].name;
-      option2.value = data[i].id
+      option2.value = data[i].id;
 
       option3 = document.createElement('option');
       option3.text = data[i].name;
-      option3.value = data[i].id
+      option3.value = data[i].id;
 
       dropdown1.add(option1);
       dropdown2.add(option2);
       dropdown3.add(option3);
-
     }
     // console.log(data) // Verify options
+
    } else {
   }
      
@@ -153,24 +153,85 @@ function selectResponse() {
   console.log(id_2)
   console.log(choice3)
   console.log(id_3)
-}
+
+
+
+  const requestURL2 = 'json/data2.json';
+
+  async function infoFetch() {
+    try {
+      const response = await fetch(requestURL2);
+      if (response.ok) {
+        const info = await response.json();
+        console.log(info); 
+        displayReceipt(info);
+
+      } else {
+          throw Error(await response.text());
+      }
+    } catch (error) {
+        console.log(error);
+    }
+  }
+  
+  infoFetch();
 
 
 
 
-/* 
-function selectResponse() {
-  let choice1 = document.getElementById('fruit1');
-  let choice2 = document.getElementById('fruit2');
-  let choice3 = document.getElementById('fruit3');
+// Display the Results
+
+const first_name = document.querySelector('#first_name');
+const email = document.querySelector('#email');
+const phone = document.querySelector('#phone');
+const choice_1 = document.querySelector('#choice1');
+const choice_2 = document.querySelector('#choice2');
+const choice_3 = document.querySelector('#choice3');
+const total_carbs = document.querySelector('#total_carbs');
+const total_protein = document.querySelector('#total_protein');
+const total_fat = document.querySelector('#total_fat');
+const total_calories = document.querySelector('#total_calories');
+const total_sugar = document.querySelector('#total_sugar');
+
+
+
+function  displayReceipt(receiptInfo) {
+  first_name.innerHTML = document.querySelector('#fname').value;
+  email.innerHTML = document.querySelector('#e_mail').value;
+  phone.innerHTML = document.querySelector('#telephone').value;
+  choice_1.innerHTML = `${text1}`;
+  choice_2.innerHTML = `${text2}`;
+  choice_3.innerHTML = `${text3}`;
+
+  console.log(id_1)
+  console.log(id_2)
+  console.log(id_3)
   console.log(choice1)
   console.log(choice2)
   console.log(choice3)
+
+  
+
+  function getInfo(choice, id) {
+    const list = requestURL2;
+    let name = choice;
+    return list.name[name];
+
+  }
+
+  console.log(getInfo(choice1, id_1))
+
+  total_calories.innerHTML = `<strong>${receiptInfo.data[0].nutritions.calories}</strong>`;
+  total_carbs.innerHTML = `<strong>${receiptInfo.data[0].nutritions.carbohydrates}</strong>`;
+  total_protein.innerHTML = `<strong>${receiptInfo.data[0].nutritions.protein}</strong>`;
+  total_fat.innerHTML = `<strong>${receiptInfo.data[0].nutritions.fat}</strong>`;
+  total_sugar.innerHTML = `<strong>${receiptInfo.data[0].nutritions.sugar}</strong>`;
+}
 }
 
 // Order Submission
 
-
+/*
 const b = document.getElementById('order_now')
 
 function receiptInfo() {
@@ -199,4 +260,5 @@ function receiptInfo() {
     console.log(calories)
     console.log(sugar)
   }
-} */
+} 
+*/
