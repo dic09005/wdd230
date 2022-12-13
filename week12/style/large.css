@@ -83,4 +83,20 @@ div.receipt {
     box-shadow: 10px 5px 5px rgb(246, 198, 83);
 }
 
+/* Main About */
+main.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.about div.hero {
+    grid-column: 3/4;
+}
+
+main.about a {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
 }

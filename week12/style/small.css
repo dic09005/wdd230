@@ -276,16 +276,29 @@ main.about {
     background-color: rgba(198, 245, 15);
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 2fr;
     text-align: center;
     font-family: 'Shadows Into Light', cursive;
     font-weight: 800;
 }
 
 .about div.hero {
+    display: block;
     grid-column: 1/2;
+    grid-row: 3/4;
 }
 
 .about div.about_us {
     text-align: center;
     margin: 5vw;
+}
+
+main.about a {
+    background-color: rgba(246, 198, 83);
+}
+
+main.about a img{
+    grid-row: 1/2;
+    width: 412px;
+    border-radius: 10px;
 }
