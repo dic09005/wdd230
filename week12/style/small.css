@@ -102,7 +102,7 @@ footer {
 main.home {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 2fr;
     font-family: 'Shadows Into Light', cursive;
     font-weight: 800;
     text-align: center;
@@ -150,12 +150,11 @@ div.overlay {
 
 div.summary {
     background-color: rgb(246, 198, 83);
+    justify-self: center;
 }
 
 div.summary p {
-    border-top: 2px solid black;;
-    margin: 2vw;
-    padding: 15px;
+    max-width: 800px;
 }
 
 div.orderhistory, div.order, div.weather {
