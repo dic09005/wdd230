@@ -60,19 +60,23 @@ main.fresh {
 .fresh div.hero {
     background-color: rgba(198, 245, 15);
     display: block;
-    grid-column: 1/2;
+    grid-column: 3/4;
     grid-row: 1/2;
-    max-width: 750px;
+    max-width: 450px;
     justify-self: center;
+    padding: 0px;
+    margin: 20px;
 }
 
 form.order {
-    grid-column: 2/3;
+    grid-column: 1/2;
     justify-self: center;
 }
 
-.fresh div.receipt {
-    grid-column: 3/4;
+div.receipt {
+    grid-column: 2/3;
+    justify-self: center;
+    min-width: 393px;
 }
 
 .fresh .hero img {

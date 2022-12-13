@@ -158,7 +158,7 @@ function selectResponse() {
 
 
 
-  const requestURL2 = 'json/data.json';
+  const requestURL2 = 'JSON/data.json';
 
   async function infoFetch() {
     try {
