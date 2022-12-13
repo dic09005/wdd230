@@ -71,7 +71,7 @@
             />
           </li>
           <li>
-            <label for="email">E-mail</label>
+            <label for="e_mail">E-mail</label>
             <input
               type="email"
               id="e_mail"
@@ -92,15 +92,15 @@
             />
           </li>
           <li>
-            <label for="Fruit1">Fruit 1</label>
+            <label for="fruit1">Fruit 1</label>
             <select name="fruit1" id="fruit1"></select>
           </li>
           <li>
-            <label for="Fruit2">Fruit 2</label>
+            <label for="fruit2">Fruit 2</label>
             <select name="fruit2" id="fruit2"></select>
           </li>
           <li>
-            <label for="Fruit3">Fruit 3</label>
+            <label for="fruit3">Fruit 3</label>
             <select name="fruit3" id="fruit3"></select>
           </li>
           <li>
@@ -112,7 +112,12 @@
             ></textarea>
           </li>
           <li>
-            <button type="button" id="order_now" class="order_now" onclick="selectResponse()">
+            <button
+              type="button"
+              id="order_now"
+              class="order_now"
+              onclick="selectResponse()"
+            >
               Order Now
             </button>
           </li>
@@ -120,26 +125,28 @@
       </form>
       <div class="receipt">
         <h2>Your Order Summary</h2>
+        <p>First Name: <span id="first_name"></span></p>
+
+        <p>Email: <span id="email"></span></p>
+
+        <p>Phone Number: <span id="phone"></span></p>
+
+        <p>Fruit 1: <span id="choice1"></span></p>
+
+        <p>Fruit 2: <span id="choice2"></span></p>
+
+        <p>Fruit 3: <span id="choice3"></span></p>
+
         <p>
-          First Name: <span id="first_name"></span> 
-        <p>
-          Email: <span id="email"></span>
-        <p>
-          Phone Number: <span id="phone"></span> 
-        <p>
-          Fruit 1: <span id="choice1"></span> 
-        <p>
-          Fruit 2: <span id="choice2"></span>
-        <p>
-          Fruit 3: <span id="choice3"></span>
-        <p>
-          Total Carbs: <span id="total_carbs"></span> <br>
-          Total Protein: <span id="total_protein"></span> <br>
-          Total Fat: <span id="total_fat"></span> <br>
-          Total Calories: <span id="total_calories"></span> <br>
-          Total Sugar: <span id="total_sugar"></span> <br>
-        <p class="theMessage">
-          Message: <br><span id="message1"></span>     
+          Total Carbs: <span id="total_carbs"></span> <br />
+          Total Protein: <span id="total_protein"></span> <br />
+          Total Fat: <span id="total_fat"></span> <br />
+          Total Calories: <span id="total_calories"></span> <br />
+          Total Sugar: <span id="total_sugar"></span> <br />
+        </p>
+
+        <p class="theMessage">Message: <br /><span id="message1"></span></p>
+      </div>
     </main>
     <footer>
       <div>
