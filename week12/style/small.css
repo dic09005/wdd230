@@ -188,7 +188,8 @@ form.order {
     box-shadow: 10px 5px 5px rgb(246, 198, 83);
 }
 
-.order h2 {
+main.fresh h2 {
+    padding: 15px;
     border-bottom: 2px solid black;
 }
 

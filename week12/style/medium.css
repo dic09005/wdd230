@@ -73,6 +73,8 @@
         border-radius: 10px;
         grid-row: 2/3;
         max-height: 800px;
+        align-self: center;
+        padding: 30px;
     }
 
     .fresh div.hero img {
