@@ -113,7 +113,7 @@
             ></textarea>
           </li>
           <li>
-            <button type="button" class="order_now" onclick="selectResponse()">
+            <button type="button" id="order_now" class="order_now" onclick="selectResponse()">
               Order Now
             </button>
           </li>
@@ -122,11 +122,11 @@
       <div class="receipt">
         <h2>Your Order Summary</h2>
         <p>
-          First Name <span id="first_name"></span> 
+          First Name: <span id="first_name"></span> 
         <p>
-          Email <span id="email"></span>
+          Email: <span id="email"></span>
         <p>
-          Phone Number <span id="phone"></span> 
+          Phone Number: <span id="phone"></span> 
         <p>
           Fruit 1: <span id="choice1"></span> 
         <p>
@@ -142,7 +142,9 @@
         <p>
           Total Calories: <span id="total_calories"></span> 
         <p>
-          Total Sugar: <span id="total_sugar"></span>        
+          Total Sugar: <span id="total_sugar"></span>   
+        <p class="theMessage">
+          Message: <br><span id="message1"></span>     
     </main>
     <footer>
       <div>

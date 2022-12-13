@@ -39,7 +39,6 @@ div.media {
 }
 
 div.media a img {
-    
     height: 50px;
 }
 
@@ -248,11 +247,26 @@ select#fruit1, select#fruit2, select#fruit3 {
 	display: flex;
     flex-direction: column;
     text-align: center;
+    align-items: center;
     margin: 1em;
     max-width: 425px;
-    background-color:  rgb(232, 255, 255);
+    background-color:  rgba(102, 205, 170);
     border-radius: 10px;
     box-shadow: 10px 5px 5px rgb(246, 198, 83);
+}
+
+div.receipt p {
+    font: 1em;
+    width: 300px;
+    box-sizing: border-box;
+    border: 2px solid #555;
+    border-radius: 5px;
+    padding: 0.5rem;
+    background-color: rgb(232, 255, 255);
+}
+
+p.theMessage {
+    height: auto;
 }
 
 /* Main About */

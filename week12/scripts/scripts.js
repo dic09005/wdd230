@@ -27,7 +27,7 @@ async function apiFetch() {
       const response = await fetch(url);
       if (response.ok) {
         const data = await response.json();
-        console.log(data); 
+        // console.log(data); 
         displayResults(data);
       } else {
           throw Error(await response.text());
@@ -42,12 +42,12 @@ async function apiFetch() {
 // Display the Results
 
 function  displayResults(weatherData) {
-    currentTemp.innerHTML = `<strong>${weatherData.list[0].main.temp.toFixed(0)}</strong>`;
-    description.innerHTML = `<strong>${weatherData.list[0].weather[0].description}</strong>`;
-    humidity.innerHTML = `<strong>${weatherData.list[0].main.humidity.toFixed(0)}</strong>`;
-    tomorrow1forecast.innerHTML = `<strong>${weatherData.list[1].main.temp.toFixed(0)}</strong>`;
-    tomorrow2forecast.innerHTML = `<strong>${weatherData.list[2].main.temp.toFixed(0)}</strong>`;
-    tomorrow3forecast.innerHTML = `<strong>${weatherData.list[3].main.temp.toFixed(0)}</strong>`;
+  currentTemp.innerHTML = `<strong>${weatherData.list[0].main.temp.toFixed(0)}°</strong>`;
+  description.innerHTML = `<strong>${weatherData.list[0].weather[0].description}</strong>`;
+  humidity.innerHTML = `<strong>${weatherData.list[0].main.humidity.toFixed(0)}%</strong>`;
+  tomorrow1forecast.innerHTML = `High of <strong>${weatherData.list[1].main.temp.toFixed(0)}°</strong>`;
+  tomorrow2forecast.innerHTML = `High of <strong>${weatherData.list[2].main.temp.toFixed(0)}°</strong>`;
+  tomorrow3forecast.innerHTML = `High of <strong>${weatherData.list[3].main.temp.toFixed(0)}°</strong>`;
 
 }
 
@@ -147,23 +147,26 @@ function selectResponse() {
   let choice3 = text3;
   let id_3 = c.options[c.selectedIndex].value;
 
-  console.log(choice1)
-  console.log(id_1)
-  console.log(choice2)
-  console.log(id_2)
-  console.log(choice3)
-  console.log(id_3)
+
+
+  // console.log(choice1)
+  // console.log(id_1)
+  // console.log(choice2)
+  // console.log(id_2)
+  // console.log(choice3)
+  // console.log(id_3)
 
 
 
-  const requestURL2 = 'json/data2.json';
+  const requestURL2 = 'json/data.json';
 
   async function infoFetch() {
     try {
       const response = await fetch(requestURL2);
       if (response.ok) {
         const info = await response.json();
-        console.log(info); 
+
+        // console.log(info); 
         displayReceipt(info);
 
       } else {
@@ -175,8 +178,6 @@ function selectResponse() {
   }
   
   infoFetch();
-
-
 
 
 // Display the Results
@@ -192,73 +193,108 @@ const total_protein = document.querySelector('#total_protein');
 const total_fat = document.querySelector('#total_fat');
 const total_calories = document.querySelector('#total_calories');
 const total_sugar = document.querySelector('#total_sugar');
+const message1 = document.querySelector('#message1');
 
-
-
-function  displayReceipt(receiptInfo) {
+function  displayReceipt(info) {
   first_name.innerHTML = document.querySelector('#fname').value;
   email.innerHTML = document.querySelector('#e_mail').value;
   phone.innerHTML = document.querySelector('#telephone').value;
   choice_1.innerHTML = `${text1}`;
   choice_2.innerHTML = `${text2}`;
   choice_3.innerHTML = `${text3}`;
+  message1.innerHTML = document.querySelector('#message').value;
 
-  console.log(id_1)
-  console.log(id_2)
-  console.log(id_3)
-  console.log(choice1)
-  console.log(choice2)
-  console.log(choice3)
+  // console.log(id_1)
+  // console.log(id_2)
+  // console.log(id_3)
+  // console.log(choice1)
+  // console.log(choice2)
+  // console.log(choice3)
 
+  let calories1 = 0;
+  let carbs1 = 0;
+  let protein1 = 0;
+  let fat1 = 0;
+  let sugar1 = 0;
+
+  let calories2 = 0;
+  let carbs2 = 0;
+  let protein2 = 0;
+  let fat2 = 0;
+  let sugar2 = 0;
+
+  let calories3 = 0;
+  let carbs3 = 0;
+  let protein3 = 0;
+  let fat3 = 0;
+  let sugar3 = 0;
   
 
-  function getInfo(choice, id) {
-    const list = requestURL2;
-    let name = choice;
-    return list.name[name];
+  for (let index = 0; index < 3; index++) {
+    const option1 = `${text1}`;
+    const option2 = `${text2}`;
+    const option3 = `${text3}`;
 
-  }
+    for (let fruitChoice = 0; fruitChoice < info.length; fruitChoice++) {
+      const fruit = info[fruitChoice];
+      if (info.name == option1.text) {
+        calories1 = fruit.nutritions.calories;
+        carbs1 = fruit.nutritions.carbohydrates;
+        protein1 = fruit.nutritions.protein;
+        fat1 = fruit.nutritions.fat;
+        sugar1 = fruit.nutritions.sugar;
+      }
+      if (info.name == option2.text) {
+        calories2 = fruit.nutritions.calories;
+        carbs2 = fruit.nutritions.carbohydrates;
+        protein2 = fruit.nutritions.protein;
+        fat2 = fruit.nutritions.fat;
+        sugar2 = fruit.nutritions.sugar;
+      }
+      if (info.name == option3.text) {
+        calories3 = fruit.nutritions.calories;
+        carbs3 = fruit.nutritions.carbohydrates;
+        protein3 = fruit.nutritions.protein;
+        fat3 = fruit.nutritions.fat;
+        sugar3 = fruit.nutritions.sugar;
+      }
+    };
 
-  console.log(getInfo(choice1, id_1))
+    sum_calories = calories1 + calories2 + calories3;
+    sum_carbs = carbs1 + carbs2 + carbs3;
+    sum_protein = protein1 + protein2 + protein3;
+    sum_fat = fat1 + fat2 + fat3;
+    sum_sugar = sugar1 + sugar2 + sugar3;
+  };
 
-  total_calories.innerHTML = `<strong>${receiptInfo.data[0].nutritions.calories}</strong>`;
-  total_carbs.innerHTML = `<strong>${receiptInfo.data[0].nutritions.carbohydrates}</strong>`;
-  total_protein.innerHTML = `<strong>${receiptInfo.data[0].nutritions.protein}</strong>`;
-  total_fat.innerHTML = `<strong>${receiptInfo.data[0].nutritions.fat}</strong>`;
-  total_sugar.innerHTML = `<strong>${receiptInfo.data[0].nutritions.sugar}</strong>`;
+
+
+  total_calories.innerHTML = sum_calories;
+  total_carbs.innerHTML = sum_carbs;
+  total_protein.innerHTML = sum_protein;
+  total_fat.innerHTML = sum_fat;
+  total_sugar.innerHTML = sum_sugar;
+
+
 }
 }
 
-// Order Submission
+////////////////Function For Count On Click//////////////////
 
-/*
-const b = document.getElementById('order_now')
+document.getElementById('order_now').addEventListener("click", function() {
 
-function receiptInfo() {
-  let receipt = document.createElement('section');
-  let first_name = document.createElement('p');
-  let email = document.createElement('p');
-  let phone = document.createElement('p');
-  let choice1 = document.createElement('p');
-  let choice2 =  document.createElement('p');
-  let choice3 = document.createElement('p');
-  let total_carbs = document.createElement('p');
-  let total_protein = document.createElement('p');
-  let total_fat = document.createElement('p');
-  let total_calories = document.createElement('p');
-  let total_sugar = document.createElement('p');
+  // initialize display elements
+  const ordersDisplay = document.querySelector('.order_now');
 
-  for (let i = 0; i < data.length; i++) {
-    let carbs = data[i].nutritions.carbohydrates;
-    let protein = data[i].nutritions.protein
-    let fat = data[i].nutritions.fat
-    let calories = data[i].nutritions.calories
-    let sugar = data[i].nutritions.sugar
-    console.log(carbs)
-    console.log(protein)
-    console.log(fat)
-    console.log(calories)
-    console.log(sugar)
-  }
-} 
-*/
+  // get the stored value in localStorage
+  let numberOfOrders = Number(window.localStorage.getItem("orders-ls"));
+
+  ordersDisplay.textContent = "Order Now";
+
+  // increment the number of visits.
+  numberOfOrders++;
+
+  // store the new number of visits value
+  window.localStorage.setItem("orders-ls", numberOfOrders);
+});
+
