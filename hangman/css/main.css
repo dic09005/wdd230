@@ -1,0 +1,85 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+  
+header, footer {
+    padding: 1em;
+    text-align: center;
+    background-color: #a5742a;
+}
+  
+body {
+    background-color: antiquewhite;
+}
+  
+main {
+    padding: 1em;
+    text-align: center;
+    background-color: #f1d5aa;
+    height: 100%;
+}
+    
+svg {
+    width: 300px;
+    height: 300px;
+}
+  
+#text {
+    height: 100%;
+    padding: 50px;
+    padding-bottom: 10px;
+}
+
+.guessed {
+    height: 100%;
+    max-width: 20em;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+section {
+    display: flex;
+    flex-direction: column;
+}
+  
+#head, #arm-l, #arm-r, #leg-l, #leg-r, #torso, #eye-l, #eye-r, #mouth {
+    display: none;
+}
+    
+#letters {
+    font-size: 50px;
+}
+  
+.letterBtn {
+    background-color: #ce9deaf8;
+    padding: .5em;
+    margin: .5em;
+}
+  
+#prompt {
+    font-size: 25px;
+    margin-top: 50px;
+}
+
+#lettersPicked {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#mistakesleft {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+h1.Alert {
+    padding-top: auto;
+    padding-bottom: auto;
+}
+
+select, button {
+    padding: .25em;
+}
