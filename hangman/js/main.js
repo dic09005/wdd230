@@ -39,7 +39,9 @@ function getInput() {
         let parts = ["head", "torso", "arm-l", "arm-r", "leg-l", "leg-r", "eye-l", "eye-r", "mouth"];
 
         // picks a word at random
-        let word = words[Math.floor(Math.random() * words.length)];
+        let word1 = words[Math.floor(Math.random() * words.length)];
+
+        let word = word1.toLowerCase();
 
         // give me a list of empty letters for the word
         let answerArray = [];
@@ -60,7 +62,8 @@ function getInput() {
 
         if (remainingLetters > 0) {
           let submission = () => {
-            let guess = guessInput.value;
+            let userInput = guessInput.value;
+            let guess = userInput;
 
             console.log(guess) // logs guess
 
