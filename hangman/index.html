@@ -22,7 +22,16 @@
                 Caution, I will let you use the same letter <br> 
                 more than once, but that will cost you turns.<br> 
                 You only get ten guesses so choose wisely. <br> 
-            </p>
+            </p><br>
+            <span id="cat">
+                <label for="inputCat">Pick a Category</label>
+                <select id="inputCat" type="text" onchange="getInput()">
+                    <option value="Select" disabled selected>Category</option>
+                    <option value="randomWords">Random Words</option>
+                    <option value="animals">Animals</option>                    
+                    <option value="stateCapitals">State Capitals</option>
+                </select>
+            </span>
         </div>
         <section><!-- SVG components were found online -->
             <svg id="hangman-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 400 500" stroke="#000000" fill="none"><!-- This is how the SVG components are displayed -->
