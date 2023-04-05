@@ -59,65 +59,83 @@ function getInput() {
         // while there are still letters to guess
         letters.innerHTML = answerArray.join(" ");
         let guess;
+        let guessedLetters = [];
 
         if (remainingLetters > 0) {
           let submission = () => {
             let userInput = guessInput.value;
             let guess = userInput;
 
-            console.log(guess) // logs guess
+            
+            guessedLetters.push(guess);
+
+            console.log(guess); // logs guess
 
             let existingLetters = remainingLetters;
 
-            if (guess.length !== 1) {
-              document.querySelector(".Alerts").innerHTML = "Please enter a single letter";
+            console.log(guessedLetters);
+
+            guessedLetters.pop(guess);
+
+            if (guessedLetters.includes(guess)) {
+
+              document.querySelector(".Alerts").innerHTML = "Please enter a different letter";
+
             } else {
-              //update the game state with the guess
-              for (let i = 0; i < word.length; i++) {
-                // if they were correct
-                if (word[i] === guess) {
-                  answerArray[i] = guess;
+
+              guessedLetters.push(guess);
+
+              if (guess.length !== 1) {
+                document.querySelector(".Alerts").innerHTML = "Please enter a single letter";
+              
+              } else {
+
+                //update the game state with the guess
+                for (let i = 0; i < word.length; i++) {
+                  // if they were correct
+                  if (word[i] === guess) {
+                    answerArray[i] = guess;
+                    letters.innerHTML = answerArray.join(" ");
+                    remainingLetters--;
+                  }
+                }
+
+                // If they got it wrong
+                if (existingLetters === remainingLetters) {
+                  
+                  console.log(parts.length) //verify chances
+
+                  // Print remaining chances to screen
+                  let chancesLeft = parts.length
+                  document.querySelector(".chancesLeft").innerHTML = chancesLeft;
+
+                  // Check Progress
+                  if (parts.length > 0) {
+                    let part = document.getElementById(parts[0]);
+                    part.style.display = "block";
+                    parts.shift();
+                  }
+                  else {
+                    document.querySelector(".Alerts").innerHTML = "You lost!";
+                    // alert("You lost!");
+                  }
+                }
+
+                // Print Message if all letters are guessed
+                if (remainingLetters === 0) {
                   letters.innerHTML = answerArray.join(" ");
-                  remainingLetters--;
+                  document.querySelector(".Alerts").innerHTML = "Good job! The answer was " + word;
                 }
-              }
-
-              // If they got it wrong
-              if (existingLetters === remainingLetters) {
-                
-                console.log(parts.length) //verify chances
-
-                // Print remaining chances to screen
-                let chancesLeft = parts.length
-                document.querySelector(".chancesLeft").innerHTML = chancesLeft;
-
-                // Check Progress
-                if (parts.length > 0) {
-                  let part = document.getElementById(parts[0]);
-                  part.style.display = "block";
-                  parts.shift();
-                }
-                else {
-                  document.querySelector(".Alerts").innerHTML = "You lost!";
-                  // alert("You lost!");
-                }
-              }
-
-              // Print Message if all letters are guessed
-              if (remainingLetters === 0) {
-                letters.innerHTML = answerArray.join(" ");
-                document.querySelector(".Alerts").innerHTML = "Good job! The answer was " + word;
               }
 
             }
 
             // Here is where I take the guess value (the letter) 
             // and create a new element and append to new element.
-            let letterGuessed = document.createElement("p");
-            let input = document.createTextNode(guess);
-            letterGuessed.appendChild(input);
-            let element = document.getElementById("lettersPicked");
-            element.appendChild(letterGuessed);
+
+            const list = document.querySelector('#lettersPicked')
+
+            list.innerHTML = `<strong>${guessedLetters}</strong>`
 
           };
 
