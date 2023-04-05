@@ -1,0 +1,351 @@
+/********************* Styles *********************/
+
+* {
+    margin: 0%;
+}
+
+body {
+    background: url("/eventWebsite/images/fansPort.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 4em 10fr 1fr;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+    padding: 1em;
+    text-align: end;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    position: sticky;
+    top: 0px;
+    
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    padding-right: 1em;
+}
+
+header, footer {
+    margin: 0%;
+    background-color: #56514B;
+}
+
+li {
+    padding: .5em;
+}
+
+h2 {
+    text-shadow: white 1px 1px;
+    text-align: center;
+}
+
+/***************** Nav ********************/
+
+nav {
+    position: fixed;
+    top: .25em;
+}
+
+nav ul {
+    display: none;
+}
+
+nav ul.open {
+    display: block;
+	position: absolute;
+	background-color: #bbb;
+    border-radius: 5px;
+	text-align: center;
+	z-index: 1;
+    padding-left: 0%;
+}
+
+nav ul.open a {
+    color: black;
+}
+
+nav ul li {
+    list-style-type: none;    
+    padding: 5px;
+    text-align: left;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: .5em;
+}
+
+nav ul li.active a {
+    background-color: rgba(0,0,0,0.4);
+    font-weight: 600;
+    color: white;
+}
+
+nav ul li a:hover {
+    background: white;
+    color: #56514B;
+}
+
+nav button {
+    background: transparent;
+    border: none;
+    font-size: 2rem;    
+    color: white;
+}
+
+/**** This chooses what span element to display ****/
+
+#hamburgerBtn span:nth-child(1) {
+    display: block;
+}
+#hamburgerBtn span:nth-child(2) {
+    display: none;
+}
+
+#hamburgerBtn.open span:nth-child(1) {
+    display: none;
+}
+#hamburgerBtn.open span:nth-child(2) {
+    display: block;
+}
+
+/********************* Main *********************/
+
+main {
+    padding: 2em;
+    grid-column: 1/3;
+    min-height: 440px;
+}
+
+div.declaration {
+    padding: 1em;
+    background-color: lightgrey;
+    border-radius: .25em;
+    box-shadow: 0 0 30px #56514B;
+}
+
+div.declaration p {
+    text-align: center;
+}
+
+/* Artist Card For Main Page*********************/
+
+div.artistBox {
+    display: grid;
+    grid-template-rows: auto;
+}
+
+div.infoStuff {
+    grid-row: 1/2;
+    padding: 1em;
+    background-color: #56514B;
+    color: white;
+    text-shadow: none;
+    border-radius: .5em;
+}
+
+div.infoStuff p {
+    padding: 1em;
+}
+
+div.infoStuff p.part2 {
+    display: none;
+}
+
+div.infoStuff a {
+    text-decoration: none;
+    margin-top: 1em;
+}
+
+div.infoStuff a h2 {
+    color: #66FF00;
+}
+
+div.artistShoutout h2, div.infoStuff h2 {
+    padding: 1em;
+    background-color: #56514B;
+    color: white;
+    text-shadow: none;
+    border-radius: .5em;
+}
+
+div.artistShoutout, div.infoStuff {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+div.artistShoutout h3 {
+    padding: 1em;
+    text-align: center;
+}
+
+div.artistShoutout a {
+    padding: 1em;
+    margin: 1em;
+    text-decoration: none;
+    color: black;
+}
+
+div.artistShoutout div.artistCard {
+    margin: 1em;
+    padding: .5em;
+    background-color: #bbb;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    border-radius: .35em;
+    box-shadow: 0 0 30px #56514B;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.artistShoutout div.artistCard p {
+    display: none;
+}
+
+div.artistShoutout div.artistCard picture {
+    grid-row: 2/3;
+}
+
+/* Sign Up Page *******************************/
+
+div.newsletter {
+    margin-top: 3em;
+}
+
+form {
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    max-width: fit-content;
+    padding: 1em;
+    border-radius: .25em;
+    box-shadow: 0 0 30px #56514B;
+}
+
+form h2 {
+    padding-bottom: 1em;
+}
+
+form button.submit {
+    margin-top: .5em;
+    background-color: rgb(210, 180, 140, 0.8);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+input, button {
+    border-radius: .25em;
+    padding: .25em;
+}
+
+label {
+    text-shadow: 0 0 30px white;
+    padding: .25em;
+}
+
+/* Artist Card ********************************/
+
+div.artistContainer div.artistCard {
+    margin: 1em;
+    padding: .5em;
+    background-color: #bbb;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    border-radius: .35em;
+    box-shadow: 0 0 30px #56514B;
+    width: 520.48px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.artistCard h3 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    text-align: center;
+}
+
+div.artistCard picture {
+    grid-column: 1/2;
+    grid-row: 2/3; 
+    text-align: center;  
+    margin-top: .5em; 
+}
+
+div.artistCard picture img{
+    width: 60px;    
+}
+
+div.artistCard p {
+    display: none;
+}
+
+/* ticket form ******************************/
+
+div.ticketinfo {
+    margin-top: 2em;
+}
+
+div.ticketinfo form {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* About us **********************************/
+
+div.aboutUs {
+    background-color: rgb(86, 81, 75, 0.5);
+    padding: 1em;
+    margin-top: 1em;
+    border-radius: 5px;
+}
+
+div.aboutUs p {
+    color: white;
+    text-align: left;
+}
+
+/* Contact Page *******************************/
+
+div.contactForm {
+    padding-top: 1em;
+}
+
+/* Footer **************************************/
+
+footer {
+    border-top: 3px solid #bbb;
+    padding-left: 0%;
+    grid-column: 1/3;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: white;
+}
+
+footer ul {
+    padding-left: 0%;
+    text-align: center;
+}
+
+footer ul li {
+    list-style-type: none;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+footer ul li a:hover {
+    background: white;
+    color: #56514B;
+}

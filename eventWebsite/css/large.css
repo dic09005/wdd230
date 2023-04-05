@@ -1,0 +1,29 @@
+@media only screen and (min-width: 900px) {
+
+
+    nav button {display: none;}
+
+    nav ul {
+        display: flex;
+        text-align: left;
+    }
+
+    nav ul li {
+        display: inline;
+
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0px;
+    }
+
+    nav ul li a {
+        padding: .6em;
+        text-shadow: 0 0 30px #56514B;
+    }
+
+    
+
+
+}
