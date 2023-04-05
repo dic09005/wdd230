@@ -1,0 +1,22 @@
+@media only screen and (min-width: 800px)  {
+
+    main {
+        display: grid;
+        grid-template-columns: 33% 66%;
+    }
+
+    .images {
+        display: block;
+        grid-column: 1/2;
+    }
+
+    picture img {
+        max-width: 100%;
+        max-height: 517.33px;
+        box-shadow: rgb(0, 59, 120, 0.2) 4px 4px;
+    }
+
+    form {
+        grid-column: 2/3;
+    }
+}

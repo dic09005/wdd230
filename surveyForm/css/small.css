@@ -1,0 +1,78 @@
+/* Main Styles Sheet */
+
+body {
+    background-image: src="surveyForm/images/background.jpg";
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    text-align: center;
+    padding: 1em;
+    position: relative;
+    border-bottom: 3px solid #003B78 ;
+    margin-bottom: 2em;
+}
+
+header a img {
+    height: 2em;
+    position: absolute;
+    top: 2px;
+    right: 5px;
+}
+
+main {
+    display: block;
+    margin: 1em;
+}
+
+.images {
+    display: none;
+}
+
+picture.images img {
+    max-width: 100%;
+    max-height: 517.33px;
+    box-shadow: rgb(0, 59, 120, 0.2) 4px 4px;
+}
+
+form.submit {
+    max-width: 40em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section {
+    flex-direction: column;
+    text-align: center;
+    margin: 1em;
+    padding: 1em;
+    border: 3px solid #003B78 ;
+    box-shadow: rgb(0, 59, 120, 0.2) 4px 4px;
+}
+
+input.checkbox {
+    display: flex;
+    flex-direction: row;
+}
+
+section div {
+    padding: .5em;
+}
+
+textarea, input {
+    background-color: rgb(0, 59, 120, 0.1);
+}
+
+button {
+    background-color: rgb(239, 65, 56, 0.5);
+    color: #003B78;
+    max-width: 10em;
+    align-self: center;
+}
+
+footer {
+    border-top: 3px solid #003B78 ;
+    margin-top: 2em;
+    text-align: center;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <!-- Add Styles -->
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<body>
+    <header>
+        <h2>Employee Interests Survey Form</h2>
+        <a href="survey.html">
+            <img src="images/brandLogos.png" alt="logo">
+        </a>
+    </header>
+    <main>
+        <picture class="images">
+            <img src="images/important.jpg" alt="You are Important">
+        </picture>
+        <section class="formSection">
+            <form action="thankyou.html">
+
+                    <div>
+                        <label for="employeeName">Enter your name:</label>
+                        <input type="text" required>
+                    </div>
+
+                    <div>
+                        <label for="department">Enter your department:</label>
+                        <input type="text" required>
+                    </div>
+
+                    <div>
+                        <label for="bio">Tell us a little about yourself:</label>
+                        <textarea name="about" id="about" cols="auto" rows="10"></textarea>
+                    </div>
+                    
+                    <div> <!-- I forgot how to make it either or... -->
+                        <label for="radiobtn">Do you exercise at home?</label>
+                        <input type="radio" name="exe" value=1>Yes
+                        <input type="radio" name="exe" value=2>No
+                    </div>
+
+                    <label for="topic">How do you like to read about your favorite topic?</label>
+                    <div>
+                        <input type="checkbox">Books
+                        <input type="checkbox">Online resources
+                        <input type="checkbox">Phone apps
+                        <input type="checkbox">Magazines
+                    </div>
+
+                    <div> <!-- I forgot how to make it a dropdown... -->
+                        <label for="movies">What genre of movies do you like?</label>
+                        <select name="genre" id="genre">
+                            <option value="Genre Select" disabled selected>Genre Options</option>
+                            <option value="Action">Action</option>
+                            <option value="Adventure">Adventure</option>
+                            <option value="Horror">Horror</option>
+                            <option value="Comedy">Comedy</option>
+                            <option value="Western">Western</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" onclick="">Submit Form</button>
+
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>
+            This is not a real site
+        </p>
+    </footer>
+</body>
+</html>
