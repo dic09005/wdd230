@@ -1,0 +1,73 @@
+/* Main Landing Page Styles */
+
+/* Hex Colors For Site
+Primary Colors:
+    #003B78 #EF4138 #FFFFFF 
+Secondary Colors: 
+    #F6F7F7 #FBFCFC
+*/
+    
+body {
+    background-color: #F6F7F7;
+    border: 3px solid #EF4138;
+    padding: 1em;
+    margin: 1em;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    border-top: 3px solid #003B78;
+    border-bottom: 3px solid #003B78;
+    margin-top: 1em;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    padding: .5em;
+    color: #003B78;
+    position: relative;
+}
+
+header img {
+    height: 2em;
+    position: absolute;
+    top: 2px;
+    right: 5px;
+}
+
+main h1, .aboutUs h2 {
+    color: #003B78;
+    text-align: center;
+}
+
+main.hero1 {
+    padding: 2em;
+    position: absolute;
+}
+
+section {
+    padding: .5em;
+}
+
+section.aboutUs {
+    padding-bottom: 2em;
+}
+
+picture img {
+    max-width: 100%;
+    box-shadow: rgb(0, 59, 120, .15) 5px 5px;
+}
+
+footer {
+    text-align: center;
+    font-size: smaller;
+}
+
+footer a img {
+    width: 10em;
+    height: auto;
+    border-radius: .25em;
+    padding: 1em;
+}
